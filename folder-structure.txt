@@ -1,0 +1,40 @@
+    L-EDGER/
+├── App.js
+├── app.json
+├── package.json
+├── .env          <-- For Supabase keys (NEVER commit this)
+├── assets/       <-- Logos, icons, onboarding images
+│   ├── logo.png
+│   └── onboarding/
+├── components/   <-- Reusable UI components
+│   ├── Header.js
+│   ├── Badge.js
+│   └── LedgerLineCard.js
+├── constants/    <-- App-wide constants (routes, terms, creative labels)
+│   └── terms.js
+├── lib/          <-- External libraries and Supabase setup
+│   └── supabase.js
+├── navigation/   <-- Navigation stack
+│   └── RootNavigator.js
+├── screens/      <-- All screen files grouped by purpose
+│   ├── WelcomeScreen.js
+│   ├── LoginScreen.js
+│   ├── SignupScreen.js
+│   ├── RoleSelectionScreen.js
+│   ├── StackerHomeScreen.js
+│   ├── SeekerHomeScreen.js
+│   ├── SendPingScreen.js
+│   ├── PingDetail.js
+│   ├── PactDetail.js
+│   ├── ProfileScreen.js
+│   ├── RedFlagScreen.js
+|   └── RulesAgreementScreen.js
+|
+├── state/        <-- Global state (e.g. context or Zustand)
+│   └── userStore.js
+├── styles/       <-- Global styles (tailwind config or custom theme)
+│   └── theme.js
+└── utils/        <-- Utility functions
+    ├── formatDate.js
+    ├── credMeterCalc.js
+    └── tagMapper.js
