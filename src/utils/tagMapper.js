@@ -2,7 +2,7 @@ const tagMap = {
   emergency: {
     label: 'Emergency',
     color: '#ff4d4d',
-    icon: 'alert-circle', // Lucide or FontAwesome
+    icon: 'alert-circle',
   },
   hospital: {
     label: 'Hospital',
@@ -34,15 +34,15 @@ const tagMap = {
     color: '#999999',
     icon: 'circle',
   },
-};
+}
 
 export const mapTag = (tagKey) => {
   return tagMap[tagKey] || {
     label: 'Unknown',
     color: '#aaaaaa',
     icon: 'help-circle',
-  };
-};
+  }
+}
 
 export const getAllTagOptions = () => {
   return Object.entries(tagMap).map(([key, { label, color, icon }]) => ({
@@ -50,5 +50,5 @@ export const getAllTagOptions = () => {
     label,
     color,
     icon,
-  }));
-};
+  }))
+}
